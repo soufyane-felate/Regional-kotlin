@@ -13,8 +13,10 @@ class CompteBancaire(var numeroDuCompte: String,
     fun retirer(montent: Double){
         if (solde>montent){
             solde-=montent
-        }else println("votre solde inferieur de montent")
+        }
+        println("Votre solde est inférieur au montant que vous souhaitez retirer")
     }
+
     fun afficher(){
         println("le nom est ${nomTutulaire},numero du Compte est ${numeroDuCompte},solde ${solde}")
     }
